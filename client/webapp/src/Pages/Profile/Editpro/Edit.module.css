@@ -1,0 +1,60 @@
+.editer{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.836);
+    display: flex;
+    align-items: center;
+    z-index: 3000;
+    justify-content: center;
+}
+.editbox{
+    width: 65%;
+    height: 70%;
+    border-radius: 30px;
+    display: flex;
+    background: black;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+.profileUserImg{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.formdata{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding: 1px 10px;
+    margin-top: 20px;
+}
+.labels{
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 800;
+    
+}
+.userinput{
+padding: 5px 0;
+border: 1px solid rgb(255, 255, 255);
+background: transparent;
+color: aliceblue;
+border-radius: 5px;
+}
+::placeholder{
+    color: white;
+}
+.update{
+    padding: 10px 10px;
+    border: none;
+    background: greenyellow;
+    border-radius: 20px;
+    margin-top: 5px;
+}

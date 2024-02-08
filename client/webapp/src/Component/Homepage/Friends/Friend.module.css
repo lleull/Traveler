@@ -1,0 +1,79 @@
+.follow {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background: white;
+    flex-direction: column;
+    height: 45vh;
+    gap: 5px;
+    @media ( width < 780px) {
+      display: none;
+      
+    }
+  }
+  ::-webkit-scrollbar-track{
+    width: 3px;
+  }
+  .followhead {
+    text-align: center;
+    width: 90%;
+    margin: 0;
+    color: rgb(65, 35, 35);
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .sing{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+  }
+  .followpro {
+    width: 85%;
+    display: flex;
+    height: 100px;
+    align-items: center;
+    padding: 10px 10px;
+    justify-content: space-between;
+  }
+  .propic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  .prodetail {
+    display: flex;
+    flex-direction: column;
+  }
+  .followname {
+    margin: 0;
+    font-size: 15px;
+  }
+  .followwork {
+    margin: 0;
+    font-size: 13px;
+    color: gray;
+  }
+  .adder{
+    background: rgb(207, 208, 216);
+    border-radius: 50%;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  .adder:hover{
+    background: gray;
+  }
+
+  .morebtn{
+    width: 80%;
+    background: transparent;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+ 
+    margin: 5px;
+    padding: 10px 0px;
+  }

@@ -1,0 +1,190 @@
+.topbarContainer {
+  height: 50px;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  margin-bottom: 10px;
+  margin: 5px 0px;
+  overflow: hidden;
+  top: 0;
+  z-index: 999;
+}
+.topbarLeft {
+  flex: 2;
+
+  @media (width < 712px) {
+    flex: 1;
+  }
+}
+.logout {
+  font-size: 13px;
+  margin-left: 10px;
+}
+.logodata {
+  font-size: 30px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  @media (width < 780px) {
+    font-size: 20px;
+    width: 30%;
+    
+    margin-lef: 20px;
+  }
+}
+.topbarCenter {
+  flex: 2;
+}
+.linkg {
+  background: rgb(228, 224, 224);
+  padding: 5px 5px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.rightbar {
+  display: flex;
+  align-items: center;
+
+  @media (width < 720px) {
+    margin-right: 50px;
+  }
+}
+.username {
+  text-transform: uppercase;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.searchcIcon {
+  font-size: 20px !important;
+}
+.topbarLinks {
+  display: flex;
+  cursor: pointer;
+  margin-left: 100px;
+  gap: 10px;
+
+  @media (width > 710px) {
+    margin: 0;
+  }
+}
+.topbarRight {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+
+  @media (width < 780px) {
+    width: 80%;
+    flex: 5;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+.topbarIcons {
+  display: flex;
+}
+.topbarIconItem {
+  margin-right: 15px;
+  position: relative;
+  cursor: pointer;
+}
+.topbarBadge {
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.searchinput:focus {
+  outline: none;
+}
+.searchinput {
+  border: 1x solid black;
+  border-radius: 20px;
+  padding: 10px 10px;
+  width: 100%;
+
+  @media (width < 780px) {
+    display: none;
+  }
+}
+::placeholder {
+  color: black;
+}
+.topbarImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.notify {
+  display: flex;
+  width: 30%;
+  height: 100vh;
+  flex-direction: column;
+  position: fixed;
+  top: 60px;
+  left: 65%;
+  background: rgb(41, 38, 38);
+  padding: 0px 20px;
+  animation: slide 0.5s ease-in-out;
+
+  @media (width < 710px) {
+    width: 90%;
+    left: 0;
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.nottext {
+  color: white;
+  font-weight: 700;
+  font-size: 19px;
+}
+.notnew {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.notimg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.notdescs {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 80%;
+  flex-direction: column;
+}
+.notmain {
+  color: white;
+  font-weight: 500;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: blue;
+}

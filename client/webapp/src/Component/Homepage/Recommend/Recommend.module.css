@@ -1,0 +1,52 @@
+.follow {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    background: white;
+  
+    flex-direction: column;
+    height: 40vh;
+    
+    gap: 5px;
+    @media ( width < 780px) {
+      display: none;
+      
+    }
+  }
+  .wrap{
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .img{
+    width: 35%;
+    height: 80%;
+    border-radius: 30px;
+    object-fit: cover;
+  }
+  .descs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+  .name{
+    font-weight: 700;
+    color: rgb(82, 14, 14);
+    font-size: 25px;
+  }
+
+  .desc{
+    font-size: 9px;
+    font-weight: 550;
+    
+  }
+  .span{
+    margin-top: 10px;
+  }
