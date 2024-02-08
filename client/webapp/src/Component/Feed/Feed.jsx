@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Feed.module.css";
 import { useState, useEffect } from "react";
 import { backURL } from "../../App";
-import { More, Comment } from "@mui/icons-material";
+import { MoreHoriz, Comment, } from "@mui/icons-material";
 import Loader from "../ui/Loader";
 import like from "./../Homepage/icons8-heart-50.png";
 import likedimg from "./../Homepage/icons8-heart-48.png";
@@ -63,7 +63,7 @@ export const Feed = () => {
                 <h2 className={styles.proname}>{post?.Username}</h2>
                 <h2 className={styles.pronames}>{post?.Work}</h2>
               </div>
-              <More />
+              <MoreHoriz />
             </div>
           </div>
           <p className={styles.desc}>{post.desc}</p>
